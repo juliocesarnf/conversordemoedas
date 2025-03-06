@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="form-grupo">
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor">
+        </div>
+        <div class="form-grupo">
+            <label for="from">Converter De:</label>
+            <input type="text" name="input-de" id="input-de" list="opcoes-de">
+            <datalist id="opcoes-de" class="opcoes"></datalist>
+        </div>
+        <div class="form-grupo">
+            <label for="to">Converter Para:</label>
+            <input type="text" name="input-para" id="input-para" list="opcoes-para">
+            <datalist id="opcoes-para" class="opcoes"></datalist>
+        </div>
+        <button id="converter">Converter</button>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
